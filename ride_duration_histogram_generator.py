@@ -12,7 +12,10 @@ values= raw_data['Duration']/60
 
 # the histogram of the data
 plt.hist(values, bins=100, range=(0, 125))
-plt.xlabel('Ride Duration (hours)')
+plt.axvline(np.mean(values), color='k', linestyle='dashed', linewidth=1)
+plt.xlabel('Ride Duration (minutes)')
 plt.ylabel('Number of Rides')
 plt.title('Frequency of Ride Duration')
-plt.savefig('~/hello/static/histogram.png')
+plt.savefig('hello/static/histogram.png')
+
+print(np.mean(values))

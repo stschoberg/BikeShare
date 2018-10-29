@@ -12,7 +12,7 @@
     <p>This site uses various Python libraries and Google APIs to
        analyze recent data from an LA bikeshare network. The data is availible
        <a href="https://s3.amazonaws.com/mindsumo/public/capital-one/los-angeles-metro-bike-share-trip-data.zip">here</a>
-       for further analysis.
+       for further analysis. Click on the charts to learn some more!
     </p>
   </div>
 </div>
@@ -34,12 +34,14 @@
           <div id="myModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
+              <p>
+                The dataset provides information about the duration of each ride in seconds.
+                The code translates this data into minutes then plots the frequency of the rides
+                lengths. The average ride lasts 25.92 minutes.
+              </p>
           </div>
 
         </div>
-
-        <p id="duration" style="display:none;">The dataset provides information about the duration of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
       </div>
 
       <div onmouseover="myFunction('length')" onmouseout="myFunction('length')">

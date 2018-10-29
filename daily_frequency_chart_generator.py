@@ -18,10 +18,12 @@ for date in dates:
     date_parsed= parse(date)
     day_totals[date_parsed.weekday()]= day_totals[date_parsed.weekday()] + 1
 
+
+
 plt.bar(day_values, day_totals, align='center')
 plt.xticks(day_values, DAYS)
 plt.title('Rental Frequency by Day of the Week')
 plt.ylim([15000, 21000])
 
 
-plt.savefig('~/hello/static/weekday.png')
+plt.savefig('/hello/static/weekday.png')
