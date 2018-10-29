@@ -19,10 +19,11 @@ start_lats.dropna()
 start_longs.dropna()
 
 
-#print(start_lats.value_counts())
-heat_map = gmplot.GoogleMapPlotter(34.0522, -118.2473, 13)
-heat_map.heatmap(start_lats, start_longs)
-heat_map.draw("mymap.html")
+
+
+#heat_map = gmplot.GoogleMapPlotter(34.0522, -118.2473, 13)
+#heat_map.heatmap(start_lats, start_longs)
+#heat_map.draw("mymap.html")
 
 #Creates piechart of types of memberships
 # Pie chart, where the slices will be ordered and plotted counter-clockwise:
@@ -88,7 +89,7 @@ for i in xrange(0, 1000):
         if(result != 0):
             distances.append(float(result)/1000)
 
-plt.hist(distances, bins=100, range=(0, 5))
+plt.hist(distances, bins=100, range=(0.1, 5))
 plt.axvline(np.mean(distances), color='k', linestyle='dashed', linewidth=1)
 plt.xlabel('Ride Length (km)')
 plt.ylabel('Number of Rides')

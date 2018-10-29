@@ -19,9 +19,18 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6">
+
+
+      <div style="width: 80px; height: 20px; background-color: red;"
+              onmouseover="document.getElementById('div1').style.display = 'block';">
+         <div id="div1" style="display: none;">Text</div>
+      </div>
+
+
+
       <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visuals: Ride Duration</h3>
-        <img src="{% static 'histogram.png'%}" width=80% height=80%>
-        <p>The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
+        <img src="{% static 'histogram.png'%}" width=80% height=80% onmouseover="document.getElementById('info').style.display = 'block';">
+        <p id="info" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
       <h3><span class="glyphicon glyphicon-info-sign"></span> What is the average distance (km) traveled?</h3>
         <img src="{% static 'ride_length.png'%}" width=80% height=80%>
     </div>
