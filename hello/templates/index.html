@@ -21,18 +21,32 @@
     <div class="col-md-6">
 
 
+      <div  onmouseover="myFunction('duration')" onmouseout="myFunction('duration')">
+        <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visuals: Ride Duration</h3>
+        <img src="{% static 'histogram.png'%}" width=80% height=80%>
+        <p id="duration" style="display:none;">The dataset provides information about the duration of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
+      </div>
 
-      <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visuals: Ride Duration</h3>
-        <img src="{% static 'histogram.png'%}" width=80% height=80% onmouseover="myFunction('info')" onmouseout="myFunction('info')">
-        <p id="info" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
-      <h3><span class="glyphicon glyphicon-info-sign"></span> What is the average distance (km) traveled?</h3>
+      <div onmouseover="myFunction('length')" onmouseout="myFunction('length')">
+        <h3><span class="glyphicon glyphicon-info-sign"></span> What is the average distance (km) traveled?</h3>
         <img src="{% static 'ride_length.png'%}" width=80% height=80%>
+        <p id="length" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in km.</p>
+
+      </div>
     </div>
     <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visulization: Membership Types</h3>
+      <div onmouseover="myFunction('membership')" onmouseout="myFunction('membership')">
+        <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visulization: Membership Types</h3>
         <img src="{% static 'membership_pie_chart.png'%}" width=80% height=80%>
-      <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visulization: Days of the Week</h3>
+        <p id="membership" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in km.</p>
+      </div>
+
+      <div onmouseover="myFunction('days')" onmouseout="myFunction('days')">
+        <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visulization: Days of the Week</h3>
         <img src="{% static 'weekday.png'%}" width=80% height=80%>
+        <p id="days" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in km.</p>
+      </div>
+
     </div>
     <div class="col-md-6">
       <h3><span class="glyphicon glyphicon-info-sign"></span> Which start and stop stations are most popular?</h3>
