@@ -24,17 +24,20 @@
       <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
 
-      </div>
 
 
       <div onmouseover="myFunction('myModal')" onmouseout="myFunction('myModal')">
         <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visuals: Ride Duration</h3>
         <img src="{% static 'histogram.png'%}" width=80% height=80%>
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+        </div>
+
         <p id="duration" style="display:none;">The dataset provides information about the duration of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
       </div>
 
