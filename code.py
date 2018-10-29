@@ -89,6 +89,7 @@ for i in xrange(0, 1000):
             distances.append(float(result)/1000)
 
 plt.hist(distances, bins=100, range=(0, 5))
+plt.axvline(np.mean(distances), color='k', linestyle='dashed', linewidth=1)
 plt.xlabel('Ride Length (km)')
 plt.ylabel('Number of Rides')
 plt.title('Frequency of Ride Length')
