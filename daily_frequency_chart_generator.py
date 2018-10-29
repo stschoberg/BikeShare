@@ -1,9 +1,7 @@
 import pandas as pd
-import gmplot
 import matplotlib.pyplot as plt
 import numpy as np
 from dateutil.parser import parse
-import googlemaps
 
 raw_data= pd.read_csv("metro-bike-share-trip-data.csv")
 
@@ -26,4 +24,4 @@ plt.title('Rental Frequency by Day of the Week')
 plt.ylim([15000, 21000])
 
 
-plt.savefig('/hello/static/weekday.png')
+plt.savefig('hello/static/weekday.png')

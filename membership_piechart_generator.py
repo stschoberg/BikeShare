@@ -1,9 +1,6 @@
 import pandas as pd
-import gmplot
 import matplotlib.pyplot as plt
 import numpy as np
-from dateutil.parser import parse
-import googlemaps
 
 #Creates piechart of types of memberships
 # Pie chart, where the slices will be ordered and plotted counter-clockwise:
@@ -22,4 +19,4 @@ ax1.pie(sizes, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-plt.savefig('~/hello/static/membership_pie_chart.png')
+plt.savefig('hello/static/membership_pie_chart.png')
