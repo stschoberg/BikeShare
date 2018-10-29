@@ -85,10 +85,8 @@ for i in xrange(0, 1000):
         origin= (start_lats[i], start_longs[i])
         destination= (end_lats[i], end_longs[i])
         result = gmaps.distance_matrix(origin, destination, mode='bicycling')["rows"][0]["elements"][0]["distance"]["value"]
-        distances.append(float(result)/1000)
-        print(float(result)/1000)
-        print(i)
-
+        if(result != 0):
+            distances.append(float(result)/1000)
 
 plt.hist(distances, bins=100, range=(0, 5))
 plt.xlabel('Ride Length (km)')
