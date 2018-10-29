@@ -23,7 +23,7 @@
 
 
       <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visuals: Ride Duration</h3>
-        <img src="{% static 'histogram.png'%}" width=80% height=80% onmouseover="myFunction('info')">
+        <img src="{% static 'histogram.png'%}" width=80% height=80% onmouseover="myFunction('info')" onmouseout="myFunction('info')">
         <p id="info" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in hours.</p>
       <h3><span class="glyphicon glyphicon-info-sign"></span> What is the average distance (km) traveled?</h3>
         <img src="{% static 'ride_length.png'%}" width=80% height=80%>
