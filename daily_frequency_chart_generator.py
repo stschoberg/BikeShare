@@ -24,4 +24,4 @@ plt.title('Rental Frequency by Day of the Week')
 plt.ylim([15000, 21000])
 
 
-plt.savefig('hello/static/weekday.png')
+plt.savefig('html_and_images/static/weekday.png')
