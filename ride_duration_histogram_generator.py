@@ -14,6 +14,6 @@ plt.axvline(np.mean(values), color='k', linestyle='dashed', linewidth=1)
 plt.xlabel('Ride Duration (minutes)')
 plt.ylabel('Number of Rides')
 plt.title('Frequency of Ride Duration')
-plt.savefig('hello/static/histogram.png')
+plt.savefig('html_and_images/static/histogram.png')
 
 print(np.mean(values))
