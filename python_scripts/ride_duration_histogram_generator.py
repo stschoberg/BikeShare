@@ -18,7 +18,7 @@ plt.hist(values, bins=100, range=(0, 125))
 # Prints mean line
 plt.axvline(np.mean(values), color='k', linestyle='dashed', linewidth=1)
 # Prints median line
-plt.axvline(np.median(distances), color='red', linestyle='dashed', linewidth=1)
+plt.axvline(np.median(values), color='red', linestyle='dashed', linewidth=1)
 plt.xlabel('Ride Duration (minutes)')
 plt.ylabel('Number of Rides')
 plt.title('Frequency of Ride Duration')
