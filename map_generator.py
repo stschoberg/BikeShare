@@ -17,10 +17,5 @@ end_longs= raw_data['Ending Station Longitude'].astype(float).dropna()
 start_lats.dropna()
 start_longs.dropna()
 
-print(start_lats.value_counts())
-print(start_longs.value_counts())
-
-
-heat_map = gmplot.GoogleMapPlotter(34.0522, -118.2473, 13)
-heat_map.heatmap(start_lats, start_longs)
-heat_map.draw("mymap.html")
+print(end_lats.value_counts())
+print(end_longs.value_counts())
