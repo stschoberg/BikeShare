@@ -26,7 +26,7 @@ gmaps = googlemaps.Client(key='AIzaSyCBJ5kRHDzEfzD4Hh6iEt2xkh4L3ZGNgxg')
 print("Success")
 
 # For all the data
-for i in xrange(0, len(start_lats)):
+for i in xrange(0, 1000):
     # Filters empty entries
     if (start_lats[i] != 0 and end_lats[i] != 0):
         origin= (start_lats[i], start_longs[i])
@@ -36,6 +36,7 @@ for i in xrange(0, len(start_lats)):
         # Start/stop stations can't be the same
         if(result != 0):
             distances.append(float(result)/1000)
+            print(i, ": Success. API accessed and result appened")
 
 # Chart Formatting
 plt.hist(distances, bins=100, range=(0.1, 5))
