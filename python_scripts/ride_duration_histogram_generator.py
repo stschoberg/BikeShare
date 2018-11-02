@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 raw_data= pd.read_csv("metro-bike-share-trip-data.csv")
-save_file= 'html_and_images/static/histogram.png'
+save_file= '../hello/static/histogram.png'
 # Standardizes to minutes
 values= raw_data['Duration']/60
 
@@ -24,4 +24,4 @@ plt.ylabel('Number of Rides')
 plt.title('Frequency of Ride Duration')
 
 plt.savefig(save_file)
-print("Image created. Saving to" save_file)
+print("Image created. Saving to", save_file)

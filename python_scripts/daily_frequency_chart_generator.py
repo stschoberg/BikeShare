@@ -37,4 +37,4 @@ plt.ylim([15000, 21000])
 
 # Save to file
 plt.savefig(save_file)
-print("Image created. Saved to" save_file)
+print("Image created. Saved to", save_file)

@@ -48,4 +48,4 @@ plt.ylabel('Number of Rides')
 plt.title('Frequency of Ride Length')
 
 plt.savefig(save_file)
-print("Image created. Saved to" save_file)
+print("Image created. Saved to", save_file)
