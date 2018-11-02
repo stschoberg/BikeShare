@@ -28,7 +28,7 @@
 function initMap() {
   var centerlatlng = new google.maps.LatLng(34.052200, -118.247300);
   var myOptions = {
-    zoom: 14,
+    zoom: 15,
     center: centerlatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -44,7 +44,7 @@ function initMap() {
   var marker1 = new google.maps.Marker({
     position: top1,
     map: map,
-    title: 'Hello World!'
+    label: {text: "510 E 2nd St, Los Angeles, CA 90012"}
   });
 
   var marker2 = new google.maps.Marker({
