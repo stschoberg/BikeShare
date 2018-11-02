@@ -25,3 +25,5 @@ plt.title('Frequency of Ride Duration')
 
 plt.savefig(save_file)
 print("Image created. Saving to", save_file)
+print "mean: " , np.mean(values)
+print "median: " , np.median(values)

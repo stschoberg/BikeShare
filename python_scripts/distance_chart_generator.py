@@ -26,7 +26,7 @@ gmaps = googlemaps.Client(key='AIzaSyCBJ5kRHDzEfzD4Hh6iEt2xkh4L3ZGNgxg')
 print("Success")
 
 # For all the data
-for i in xrange(0, 1000):
+for i in xrange(0, 10000):
     # Filters empty entries
     if (start_lats[i] != 0 and end_lats[i] != 0):
         origin= (start_lats[i], start_longs[i])
@@ -50,3 +50,5 @@ plt.title('Frequency of Ride Length')
 
 plt.savefig(save_file)
 print("Image created. Saved to", save_file)
+print "mean: " , np.mean(distances)
+print "median: " , np.median(distances)
