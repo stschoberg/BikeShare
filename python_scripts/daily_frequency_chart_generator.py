@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from dateutil.parser import parse
 
-# Read in data to DataFrame 
+# Read in data to DataFrame
 raw_data= pd.read_csv("metro-bike-share-trip-data.csv")
 save_file= "../hello/static/weekday.png"
 
@@ -37,4 +37,5 @@ plt.ylim([15000, 21000])
 
 # Save to file
 plt.savefig(save_file)
+print(day_totals[3])
 print("Image created. Saved to", save_file)
