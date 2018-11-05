@@ -21,7 +21,7 @@
     <div class="col-md-6">
 
       <div onclick="myFunction('myModal')" onclick="myFunction('myModal')">
-        <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visuals: Ride Duration</h3>
+        <h3><span class="glyphicon glyphicon-info-sign"></span> Data Visualization: Ride Duration</h3>
         <img src="{% static 'histogram.png'%}" width=80% height=80%>
 
           <div id="myModal" class="modal">
@@ -31,7 +31,10 @@
                 The dataset provides information about the duration of each ride in seconds.
                 The code translates this data into minutes then plots the frequency of the rides
                 lengths. While the mean-average ride lasts 25.92 minutes, a better indicator of the
-                average, the median, is 10.0 minutes.
+                average, the median, is 10.0 minutes. Ride duration data is an important factor to
+                consider when planning to upkeep the bike network. The company will want to ensure
+                there are enough bikes to service all their customers in a given day. The longer
+                someone is on a bike, the longer that bike is unavailible to others.
               </p>
               <img src="{% static 'duration_code.png'%}" width=50% height=50%>
           </div>
@@ -48,7 +51,10 @@
             <p>
               The dataset provides information about the length of each ride.
               his histogram shows the distribution of the durations of the rides in km.
-              The mean-average ride lasts 1.53km where the median ride lasts 1.38km. 
+              The mean-average ride lasts 1.53km where the median ride lasts 1.38km. Distance
+              traveled per ride is an indicator of when the bikes will need to be serviced (
+              i.e air in tires, oil on gears). Having this data availible will aid the company
+              in keeping the network functional.
             </p>
             <img src="{% static 'length_code.png'%}" width=50% height=50%>
         </div>
@@ -67,8 +73,8 @@
           <div class="modal-content">
             <span class="close">&times;</span>
             <p>
-              The dataset provides information about the length of each ride.
-              his histogram shows the distribution of the durations of the rides in km.
+              The dataset provides information about the different types of membership
+              a customer can have. This data is useful for the customer to maximize profits.
             </p>
             <img src="{% static 'piechart_code.png'%}" width=50% height=50%>
           </div>
@@ -86,16 +92,16 @@
           <div class="modal-content">
             <span class="close">&times;</span>
             <p>
-              The dataset provides information about the length of each ride.
-              his histogram shows the distribution of the durations of the rides in km.
+              The dataset provides information the dates and times of each ride.
+              In order to determine where and when bikes need to be availible, the
+              company has to know when peak usage occurs. You can see that, as expected,
+              peak usage comes during the workweek on Wednesday.
             </p>
             <img src="{% static 'weekday_code.png'%}" width=50% height=50%>
           </div>
         </div>
 
 
-
-        <p id="days" style="display:none;">The dataset provides information about the length of each ride. This histogram shows the distribution of the durations of the rides in km.</p>
       </div>
 
     </div>
